@@ -1,0 +1,21 @@
+#sendBtn {
+-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #157ead, #66c7d8);
+}
+
+#sgnBtn {
+        -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #157ead, #66c7d8);
+        }
+
+#submitNameBtn {
+               -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #157ead, #66c7d8);
+               }
+
+
+#textArea {
+              -fx-font-size: 16px;
+              -fx-font-weight: bold;
+              -fx-text-fill: #333333;
+              -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+
+}
+

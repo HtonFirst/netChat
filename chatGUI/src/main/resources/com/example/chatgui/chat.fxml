@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" alignment="CENTER" minHeight="296.0" minWidth="400.0" prefHeight="296.0" prefWidth="400.0" stylesheets="@styles/style1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatgui.ChatGUIController">
+   <HBox fx:id="authPanel" alignment="TOP_CENTER">
+      <TextField fx:id="loginField" promptText="Login" HBox.hgrow="ALWAYS" />
+      <PasswordField fx:id="passwordField" onAction="#tryToAuth" prefHeight="30.0" prefWidth="154.0" />
+      <Button fx:id="sgnBtn" onAction="#tryToAuth" text="SignIn" textFill="WHITE" prefHeight="30.0" prefWidth="120.0"/>
+   </HBox>
+   <TextArea fx:id="textArea" editable="false" />
+
+<!--   <TextArea fx:id="textArea" editable="false" prefHeight="449.0" prefWidth="400.0" />-->
+      <HBox fx:id="bottomPanel" alignment="BOTTOM_CENTER" managed="true" prefHeight="30.0" prefWidth="400.0" visible="true">
+         <children>
+            <TextField fx:id="textField" onAction="#sendMessage" prefHeight="30.0" prefWidth="384.0" />
+            <Button fx:id="sendBtn" alignment="CENTER_RIGHT" contentDisplay="TOP" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="120.0"
+                    text="Send" textAlignment="CENTER" textFill="WHITE">
+            </Button>
+         </children>
+      </HBox>
+
+</VBox>
